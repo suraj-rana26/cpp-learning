@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std ;
 int main(){
-// topic : find the array 
-// this i used to find the part of word fromm the string 
-string str = "hello" ; 
-string str2 = "batman" ;
-cout << str2.find("man")<<endl ;
+ // coding question 1 ;
+ // reverse the string 
+ string str = "virat" ; 
+ int s = 0 , e = str.size()-1 ; 
+ while(s<e){
+    swap(str[s++] , str[e--]) ; 
+ }
 
-// output is 4 s
- return 0 ; 
+ cout << str << endl ; 
+return 0 ; 
 }
