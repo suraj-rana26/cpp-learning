@@ -1,16 +1,12 @@
 #include <iostream>
 using namespace std ;
 int main(){
- // comparsion library
- string str = " hello" ;
-  string str2 = " zello" ;
+// topic : find the array 
+// this i used to find the part of word fromm the string 
+string str = "hello" ; 
+string str2 = "batman" ;
+cout << str2.find("man")<<endl ;
 
- cout << str << endl ;
- cout << str2 << endl ;
- cout << (str2 > str) << endl ;
-    return 0 ;
-// here we can multiple operator
-// such as > , < , == etc
-// if the statement correct gives 1
-// if false gives minus 1 and in equal it gives 0
+// output is 4 s
+ return 0 ; 
 }
