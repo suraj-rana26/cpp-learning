@@ -11,12 +11,11 @@ using namespace std ;
 
 
  int main() {
-Student s1 ; 
-s1.name = "Golu" ; 
-s1.age =  21  ;
+Student s1 = {"Golu" ,21} ; 
+Student s2 = {"Polu",24} ; 
 
 cout << "{Name : " << s1.name << " ,Age :" << s1.age << "}" << endl ;
-
+cout << "{Name : " << s2.name << " ,Age :" << s2.age << "}" << endl ;
 
 
 
