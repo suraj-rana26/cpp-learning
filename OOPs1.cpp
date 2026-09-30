@@ -8,8 +8,9 @@ class Form{
     string name ; // data members || propetries || attributes 
     int age ; 
 
-Form(){ // constructter j
-    cout << "Hello \n" ; 
+    Form(string n , int a){
+        name = n ; 
+        age = a ; 
 
 }
 
@@ -24,9 +25,8 @@ void display(){
 }
 } ; 
 int main() { 
-    Form obj1 ; 
-obj1.intialise("Golu" , 21) ; 
-obj1.display() ; 
+    Form obj1("Golu" , 32) ; 
+     obj1.display() ; 
 
 Form obj2 ; 
 obj2.intialise( " molu" , 23) ; 
