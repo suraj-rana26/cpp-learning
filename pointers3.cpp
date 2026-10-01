@@ -1,6 +1,7 @@
 #include <iostream> 
 using namespace std ;
-
+// writing the diifernt function in the pointer 
+// method 1 for it ;  
 int getMax(int* arr , int n){
     int max = arr[0] ;
     for(int i = 1 ; i<n ; i++){
@@ -36,7 +37,7 @@ int main(){
     
 
 
-
+// to write it is very importnat to write and dont forgot to write 
 
 
     return 0 ; 
