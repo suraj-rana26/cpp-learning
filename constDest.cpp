@@ -1,10 +1,17 @@
 #include <iostream>
 using namespace std ; 
-
+ 
+// using the private access specifier to restrict the access of data members of the class from outside the class.
 class Form{
-    public :
+private :
     string name ; 
 int age ; 
+string password ; 
+
+public :
+Form() {
+
+}
 
 Form(string name , int age){
     this->name = name ;
@@ -12,22 +19,18 @@ Form(string name , int age){
 
 }
 
-Form(string name){
-    this ->name = name ;
-} 
+string getName(){
+    return name ; 
 
-    
-        
-        ~Form(){
-            cout << "Destructor called " << endl ;
-        }
-  void display();
-    } ;
-  
-    void Form :: display(){
-    cout << "{Name : " << name << " ,Age :" << age << "}" << endl ; 
 }
+    int getAge(){
+        return age ; 
 
+    }
+} ;    
+        
+  
+    
 
 
 
@@ -39,8 +42,13 @@ Form(string name){
 int main() {
 
 Form  obj1("john", 23);
-Form obj2("polu ") ;  // overloading 
-obj1.display() ;
+Form obj2("polu " , 24) ;
+
+
+
+cout << obj1.getName() << endl ; 
+cout << obj1.getAge() << endl ;
+
 
 
 
