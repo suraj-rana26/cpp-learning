@@ -21,13 +21,16 @@ Form(string name){
         ~Form(){
             cout << "Destructor called " << endl ;
         }
-void display(){
+  void display();
+    } ;
+  
+    void Form :: display(){
     cout << "{Name : " << name << " ,Age :" << age << "}" << endl ; 
 }
 
 
 
-} ;
+
 
 
 
