@@ -12,8 +12,8 @@ try{
         // here throw is inavlid synatx to be performed
     }
     cout << (a/b) << endl ; 
-}catch(const char*msg){
-    cout << "excpetion daal diye ho " << msg << endl ; 
+}catch(...){
+    cout << " UNKWNOWN EXCEPTION HAIN"  << endl ; 
 
 }
  cout << "Tumne kar diya kaam " << endl ; 
