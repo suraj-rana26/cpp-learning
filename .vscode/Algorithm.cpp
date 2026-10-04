@@ -1,25 +1,26 @@
 #include <iostream>
 #include <algorithm> 
 #include <vector> 
+#include <set>
 using namespace std  ; 
-int main(){
-    vector<int> v ; 
+int main(){ 
+    // Coding questions :
+    // 1 . remove duplicate  
+int arr[] ={1 ,2 , 3,1,2 ,8,6,3 ,7} ; 
+int n = sizeof(arr)/sizeof(arr[0]) ;
+// to remove the duplicate we will make set from the element that put only unique element on it ; 
 
-// Algorithm :  is a predefined stl functio used to perform common operations on containers 
-// synatax  ; 
-// sort(v.begin() , v .end()) ; 
-// 2 . reverse  algorithm
-v.push_back(20) ;
-v.push_back(83) ;
-v.push_back(748) ;
-v.push_back(847) ;
-v.push_back(647) ;
+set<int> s ; 
 
+for(int ele : arr){
+    s.insert(ele) ;
 
-reverse(v.begin() , v.end()) ;
-
-for(int ele : v){
-    cout<< ele << endl ;
 }
+
+for(int ele : s){
+    cout << ele << endl ;
+
+}
+
     return 0  ; 
 }
