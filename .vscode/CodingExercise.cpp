@@ -1,13 +1,15 @@
 #include <iostream> 
 using namespace std ; 
 int main() {
-bool user = false ; 
-int doorcode = 1377 ; 
+//  if a number is postive or not 
+int MyNum = -2 ; 
 
-if(doorcode==1377){
-    cout << " correct code "  << endl;
+if( MyNum > 0 ){
+    cout << "Number is postive " ; 
 } else {
-    cout << " wrong code " << endl ;
+    cout << " Number is negative " ; 
 }
-    return 0 ; 
+
+
+return 0 ; 
 }
