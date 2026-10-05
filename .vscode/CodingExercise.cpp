@@ -1,20 +1,16 @@
 #include <iostream> 
 using namespace std ; 
 int main() {
-    // Nested If 
-    int myAge = 20 ; 
-string citizen = "Indian" ; 
-    if(myAge>=18){
-        cout << " old enough to vote " << endl ;
+bool isLoggedIN = true ; 
+bool isAdmin = false ;
+int securityLevel = 3 ; 
 
-        if(citizen == "Indian"){
-            cout << "  you  can give vote " << endl ; 
-        }else {
-            cout << " you cannot vote" << endl ;
+if(isLoggedIN && (isAdmin|| securityLevel <=2)){
+    cout << " acess granted ." ; 
+} else {
+    cout << " Acess denied " ; 
 
-        } 
-    } else {
-        cout << " not enough to vote " << endl ;
-    }
+}
+
     return 0 ; 
 }
