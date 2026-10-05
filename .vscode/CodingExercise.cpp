@@ -1,14 +1,23 @@
 #include <iostream> 
 using namespace std ; 
 int main() {
-//  if a number is postive or not 
-int MyNum = -2 ; 
+// person eligible to vote or not 
+// using nested if statements) 
+int age = 38 ; 
+bool isCitizen =  true ; 
 
-if( MyNum > 0 ){
-    cout << "Number is postive " ; 
+if(age>=18){
+    cout << " you are eligble to vote " ; 
+
+ if ( isCitizen){
+    cout << " you are the citizen to vote " << endl ;
+ } else{
+    cout << " you are not the citizen not applicable " << endl ; 
+ }
 } else {
-    cout << " Number is negative " ; 
-}
+    cout << " not eligble to vote " ; 
+ }
+
 
 
 return 0 ; 
