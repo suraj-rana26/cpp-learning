@@ -1,17 +1,12 @@
 #include <iostream> 
 using namespace std ; 
 int main() {
-// nested loop 
 
-for(int i = 1 ; i<3 ; i++){
-    cout << " outer boundary " << i << endl ; 
+// Multiplication of table 
 
-    for( int j = 1 ; j<3 ; j++ ){
-        cout << " inner boundary " << j << endl ; 
-
-    }
+for( int i = 1 ; i<11 ; i++ ){
+    cout << " 3 x " << i << " = " <<3 * i << endl ;
 }
-
 
 
 return 0 ; 
