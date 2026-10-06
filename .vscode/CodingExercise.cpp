@@ -1,12 +1,15 @@
 #include <iostream> 
-using namespace std ; 
+using namespace std ;
 int main() {
+// Multidimesonal array 
+string letters[2][3] = {
+    { "a" , "b" , "c"} ,
+    { "d" , "e" , "f"} 
+} ; 
 
-// Multiplication of table 
+cout << letters[0][2] ; 
+// here boxes are denoting the rows and column 
 
-for( int i = 1 ; i<11 ; i++ ){
-    cout << " 3 x " << i << " = " <<3 * i << endl ;
-}
 
 
 return 0 ; 
