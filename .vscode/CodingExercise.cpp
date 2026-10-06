@@ -1,27 +1,47 @@
 #include <iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
 
-    struct { 
-      string brand ; 
-      string model ; 
-      int year ;
+//  Hotel mangement 
 
-    } myCar1 , myCar2 ; 
+int numGuests ; 
+cout << " how many guests ? " ;
+cin >> numGuests ;
 
-    myCar1.brand = " BMW " ; 
-    myCar1.model = " X5 " ; 
-    myCar1.year = 1994 ; 
+// check for valid input 
 
-    myCar2.brand = " Range ROver " ; 
-    myCar2.model =  "  Valour " ; 
-    myCar2.year =  1983  ; 
+if(numGuests <= 0) {
+    cout << " number of guest atleat one " << endl ;
+    return 0 ; 
+}
+
+// create memory space for x guest 
+string* guests = new string[numGuests] ; 
+
+
+cin.ignore() ; 
+
+// eneter the guest names 
+for(int i = 0 ; i<numGuests ; i++) {
+    cout << " enter your name for guest " << (i+1) << " : " ; 
+    getline(cin , guests[i]) ; 
     
-    cout << myCar1.brand << "  " << myCar1.model <<  "  " << myCar1.year << endl ;
-cout << myCar2.brand << "  " << myCar2.model <<  "  " << myCar2.year << endl ;
+}
+// show all guests 
+
+cout << " guest checked in : " << endl ;
+ for (int i = 0 ; i <numGuests ; i++) {
+cout << guests[i] << endl ; 
 
 
 
-return 0 ; 
+}
+
+
+delete[] guests ; 
+
+    return 0 ; 
+
 }
