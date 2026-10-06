@@ -2,49 +2,26 @@
 using namespace std;
 
 int main() {
-  // SHIP BATTLE GAME 
-  // Destroy all the ships 
-  bool ships  [4][4] = {
-    { 0 , 1, 1 , 0 },
-    {0 , 0 , 0 , 0 } , 
-    { 0 , 0 , 1 , 0 } , 
-    { 0 , 0 , 1 , 0 } 
 
-  } ; 
-// hit you have done and number of time you have do 
- int hits = 0 ; 
- int numberOfTimes = 0 ; 
-// program ya hit tab tak kro jab tak total ship dub na jaye 
+    struct { 
+      string brand ; 
+      string model ; 
+      int year ;
 
- while ( hits<4) {
-    int row , column ; 
+    } myCar1 , myCar2 ; 
 
-cout << " Selcting the coordinate " << endl ; 
-cout << " choose a row nummber btw 0 & 3 :" << endl ; 
-cin >> row ;
+    myCar1.brand = " BMW " ; 
+    myCar1.model = " X5 " ; 
+    myCar1.year = 1994 ; 
 
-cout << " choose a  coloumn number btw 0 to 3 " << endl ; 
-cin >> column ;
+    myCar2.brand = " Range ROver " ; 
+    myCar2.model =  "  Valour " ; 
+    myCar2.year =  1983  ; 
+    
+    cout << myCar1.brand << "  " << myCar1.model <<  "  " << myCar1.year << endl ;
+cout << myCar2.brand << "  " << myCar2.model <<  "  " << myCar2.year << endl ;
 
 
-if( ships[row][column]) {
-    ships[row][column] = 0  ;  
-    hits ++ ; 
 
-
-    cout << " hit " << ( 4-hits) << "left " << endl ;
-} else {
-    cout << " miss " << endl ; 
-
-}
-
-numberOfTimes++ ; 
-
-
- }
- cout << " victory " << endl ; 
- cout <<  " you won in "  << numberOfTimes << " turns " << endl ; 
-
-
-  return 0;
+return 0 ; 
 }
