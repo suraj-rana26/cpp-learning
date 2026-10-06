@@ -1,22 +1,16 @@
 #include <iostream> 
 using namespace std ; 
 int main() {
-// person eligible to vote or not 
-// using nested if statements) 
-int age = 38 ; 
-bool isCitizen =  true ; 
+// nested loop 
 
-if(age>=18){
-    cout << " you are eligble to vote " ; 
+for(int i = 1 ; i<3 ; i++){
+    cout << " outer boundary " << i << endl ; 
 
- if ( isCitizen){
-    cout << " you are the citizen to vote " << endl ;
- } else{
-    cout << " you are not the citizen not applicable " << endl ; 
- }
-} else {
-    cout << " not eligble to vote " ; 
- }
+    for( int j = 1 ; j<3 ; j++ ){
+        cout << " inner boundary " << j << endl ; 
+
+    }
+}
 
 
 
