@@ -2,18 +2,15 @@
 using namespace std ; 
 int main() {
 // CModule signfies Notebook Code Drill
-string str = "notYourcOllege";
+string str = "notYouRcoLleGe";
  int v = 0 , c = 0 ;
  for(int i = 0 ; i<str.size() ; i++){
-   if(str[i]=='a'|| str[i] =='e'|| str[i]=='i'|| str[i]=='o'|| str[i]=='u')
-   v++ ;
-   else
-   c++ ;
-
-
-    }
-
-cout<< "vowels="<< v<<",and constant=" << c<< endl ;
+  if(str[i]>= 'a' && str[i] <= 'z')
+  str[i] = str[i]-32 ;
+  else
+  str[i] = str[i]+32 ;
+ }
+ cout << str << endl ;
 
 
 
@@ -21,7 +18,8 @@ cout<< "vowels="<< v<<",and constant=" << c<< endl ;
 
 
 
-    return 0 ; 
 
 
+
+return 0 ;
 }
