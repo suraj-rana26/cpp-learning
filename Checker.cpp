@@ -5,12 +5,12 @@ int main(){
 // comparsion Library 
 
 string str = " hello " ; 
-string str2 = " tears " ; 
+string str2 = " batman " ; 
 
 cout << str << endl ; 
 cout << str2 << endl ; 
-cout << (str2  < str) << endl ; 
-
+cout << str2.find("man")<< endl ;
+ 
 
 
 
