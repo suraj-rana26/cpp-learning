@@ -2,22 +2,14 @@
 using namespace std ; 
 int main() {
 // CModule signfies Notebook Code Drill
-string str = "notYouRcoLleGe";
- int v = 0 , c = 0 ;
- for(int i = 0 ; i<str.size() ; i++){
-  if(str[i]>= 'a' && str[i] <= 'z')
-  str[i] = str[i]-32 ;
-  else
-  str[i] = str[i]+32 ;
- }
- cout << str << endl ;
+// pointers revision 
 
+int x = 10 ;
+int *ptr = &x ;
+int **ptr2 = &ptr ;
 
-
-
-
-
-
+cout << x << endl ;
+cout << **ptr2 << endl ;
 
 
 
