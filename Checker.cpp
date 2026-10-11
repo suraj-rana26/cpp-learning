@@ -1,32 +1,20 @@
 #include <iostream>
 using namespace std ;
 int main(){
-
-// comparsion Library 
-
-string str = " hello " ; 
-string str2 = " batman " ; 
-
-cout << str << endl ; 
-cout << str2 << endl ; 
-cout << str2.find("man")<< endl ;
- 
-
-
-
-
-
+// palindrome questions ;
+string str = "madam";
+int i = 0 , j = str.size()-1 ;
+bool isPal = true ;
+while(i<j){
+    if(str[i] != str[j]){
+        isPal = false ;
+        break ;
+    }
+    i++ ;
+    j-- ;
+}
+cout << isPal << endl ;
 
 
-
-
-
-
-
-
-
-
-
-
-return 0 ; 
+    return 0 ;
 }
