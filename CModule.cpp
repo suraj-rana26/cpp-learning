@@ -1,23 +1,30 @@
 #include <iostream> 
-#include <algorithm>
-
 using namespace std ; 
-int main() {
-// CModule signfies Notebook Code Drill
-// pointers revision 
+// OOPS Concpet 
+class Form{
+    public :
+    string name ; // data members || propetries || attributes
+    int age ;
+
+Form(string name , int age){
+        this->name = name ;
+        this->age = age ;
+    }
+    void display(){
+        cout << "{Name: " << name << " , Age " << age << "}" << endl ;
+    }
+   
+    };
+
+    int main(){
+        Form obj1("Glou" , 34) ;
+        obj1.display();
+
+      Form obj2( "cholu" , 23) ;
+      obj2.display() ; 
 
 
-int arr[] ={1 ,2 ,3,4 ,5} ;
-int n = sizeof(arr)/sizeof(arr[0]) ;
 
-reverse (arr ,arr+ n ) ;
+    return 0  ;
 
-//Print
-for(int i = 0 ; i<n ; i++){
-   cout << arr[i] << " " ;
-
-}
-
-
-return 0 ;
-}
+ }
