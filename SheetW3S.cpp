@@ -1,15 +1,16 @@
 #include <iostream> 
 using namespace std ; 
-// Return Keyword  ;
- int myFxn(int x  , int y ) {
-    return y  + x ; 
+// Double game 
+int doubleGame(int x ) {
+    return x * 2 ; 
+}
 
- }
+int main() {
+    for(int i = 0  ; i <=5 ; i++) {
+        cout << " Double of  " << i << " is" << doubleGame(i) << endl ; 
 
- int main() {
-int z = myFxn(10 , 12 ) ; 
-cout << z ; 
-
+    }
+ 
 
 return 0 ; 
 }
