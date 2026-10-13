@@ -1,17 +1,24 @@
 #include <iostream> 
 using namespace std ; 
-// Pass an array as Parameters 
-// you can also pass array to a function  
-void myFunction(int myNum[5]) {
-    for (int i = 0 ; i<5 ;  i++) {
-        cout << myNum[i] << "\n " ; 
-    }
+//Pass By refernce 
+// passing a structure by refernce using &
+// this allows the function to modify the orginal data 
+// note ; use refernce if you want the function to chnage the structure dta to avoid copying the large structure 
 
-    }
+struct Car { 
+    string brand ; 
+    int year  ; 
 
-    int main() { 
-        int myNum[5] = {10 ,20 ,30,40 ,50} ; 
-    myFunction(myNum) ; 
+} ; 
+void myfxn  ( Car &c) {
+    c.year++ ; 
+}
+
+int main () {
+    Car myCar = { "Toyota" , 2020} ; 
+    myfxn(myCar) ; 
+    cout << " the " << myCar.brand << " is now from year" << myCar.year << "\n" ; 
+
 
 
 return 0 ;  
