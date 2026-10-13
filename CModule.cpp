@@ -1,30 +1,19 @@
 #include <iostream> 
+#include <utility>
+#include <map>
 using namespace std ; 
-// OOPS Concpet 
-class Form{
-    public :
-    string name ; // data members || propetries || attributes
-    int age ;
-
-Form(string name , int age){
-        this->name = name ;
-        this->age = age ;
-    }
-    void display(){
-        cout << "{Name: " << name << " , Age " << age << "}" << endl ;
-    }
-   
-    };
-
-    int main(){
-        Form obj1("Glou" , 34) ;
-        obj1.display();
-
-      Form obj2( "cholu" , 23) ;
-      obj2.display() ; 
+ int main() {
 
 
+map<int, string> students;
+students.insert(make_pair(101, "Sooraj"));
+students.insert(make_pair(102, "Rahul"));
 
-    return 0  ;
+for(auto it : students) {
+    cout << it.first << " -> " << it.second << endl;
+}
 
- }
+// auto is used to avoid writing long iterator types 
+
+    return 0 ;
+}
