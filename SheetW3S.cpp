@@ -1,19 +1,21 @@
 #include <iostream> 
-using namespace std ; 
+using namespace std  ; 
 
-int plusFunc(int x, int y) {
-  return x + y;
-}
-// here we have function overloading , in int and double fucntion name , we have kept same name as you can 
-// se that plusFunc  in both of the data types used for differnet operation
-double plusFunc(double x, double y) {
-  return x + y;
+// Global variable x
+int x = 5;
+
+void myFunction() {
+  // Local variable with the same name as the global variable (x)
+  int x = 22;
+  
+  cout << x << "\n";  // Refers to the local variable x
 }
 
 int main() {
-  int myNum1 = plusFunc(8, 5);
-  double myNum2 = plusFunc(4.3, 6.26);
-  cout << "Int: " << myNum1 << "\n";
-  cout << "Double: " << myNum2;
-return 0 ;  
+  myFunction();
+  
+  cout << x;  // Refers to the global variable x
+
+    return 0 ; 
+
 }
