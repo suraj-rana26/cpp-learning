@@ -1,25 +1,29 @@
 #include <iostream> 
 using namespace std  ;
-class Employee {
-  private:
-    int salary;
+// inheritance 
 
-  public:
-    Employee(int s) {
-      salary = s;
+
+
+class Vehicle {
+  public: 
+    string brand = "Ford";
+    void honk() {
+      cout << "Tuut, tuut! \n" ;
     }
-
-    // Declare friend function
-    friend void displaySalary(Employee emp);
 };
 
-void displaySalary(Employee emp) {
-  cout << "Salary: " << emp.salary;
-}
+// Derived class
+class Car: public Vehicle {
+  public: 
+    string model = "Mustang";
+};
 
 int main() {
-  Employee myEmp(50000);
-  displaySalary(myEmp);
-  return 0;
-}
+  Car myCar;
+  myCar.honk();
+  cout << myCar.brand + " " + myCar.model;
 
+
+
+return 0 ; 
+}
