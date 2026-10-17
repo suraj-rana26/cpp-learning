@@ -1,21 +1,21 @@
 #include <iostream> 
 using namespace std  ; 
 
-// Global variable x
-int x = 5;
+// Recursion 
+//Recursion is the technique of making a function call itself.
+//This technique provides a way to break complicated problems down into simple problems which are easier to solve.
+//Recursion may be a bit difficult to understand. The best way to figure out how it works is to experiment with it.
 
-void myFunction() {
-  // Local variable with the same name as the global variable (x)
-  int x = 22;
-  
-  cout << x << "\n";  // Refers to the local variable x
-}
+// Task : Countdown 
+void countdown (char n) {
+    if (n>='a') { 
+        cout << n << " " ; 
+        countdown(n-1) ;
+    }
+    }
 
-int main() {
-  myFunction();
-  
-  cout << x;  // Refers to the global variable x
-
+    int main() {
+        countdown('k'); 
     return 0 ; 
 
 }
