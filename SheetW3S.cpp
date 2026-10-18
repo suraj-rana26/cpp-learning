@@ -1,22 +1,23 @@
 #include <iostream>
-#include <ctime>
+#include <vector>
+
 using namespace std ; 
-// _________ERRORS__________
+// ________Data Structure __________
+// _____VECTOR________
 int main() { 
-try { 
-  int age = 13 ; 
-  if(age >=18) { 
-    cout << " Access granted - you are eligble" ;
-  } else { 
-    throw "niKAl" ;
 
-  }
-}
-catch (const char* myString) { 
-  cout << " Acess denied - You must be at least 18 year old " << endl ;
-  cout << " error Text " << myString ;
+  vector<string> cars = {"volvo" ," bmw" , "audi" , "hyundai", "bkia" ,  "merceded"};
 
-}
+  cout << cars[0] << endl ; 
+
+  cout << cars[3] << endl ; 
+  cout << cars[4] << endl ;
+ 
+
+
+
+
+
 
 return 0 ; 
 } 
