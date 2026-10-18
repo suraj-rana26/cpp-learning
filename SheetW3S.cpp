@@ -1,34 +1,13 @@
 #include <iostream>
-using namespace std ;
-
-// Polymorphism ;
-
-//Virtual Function 
-// A virtual fxn is a member function in the base class that can be overridden in derived classes ; 
-//Without virtual: the base function runs, even if the object is from a child class.
-//With virtual: the child's version runs, like you expect.
-
-
-class Animal {
-  public:
-    virtual void sound() {
-      cout << "Animal sound\n";
-    }
-};
-
-class Dog : public Animal {
-  public:
-    void sound() override {
-      cout << "Dog barks\n";
-    }
-};
+using namespace std;
+// use of template 
+template <typename T>
+T add(T a, T b) {
+  return a + b;
+}
 
 int main() {
-  Animal* a;
-  Dog d;
-  a = &d;
-  a->sound(); 
-
-
-return 0 ; 
+  cout << add<int>(5, 3) << "\n";
+  cout << add<double>(2.5, 1.5) << "\n";
+  return 0;
 }
