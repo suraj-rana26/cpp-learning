@@ -1,44 +1,38 @@
 #include <iostream>
 using namespace std ;
 
-// base class 
-class Employee { 
-  protected :
-  int salary ;
-
-} ;
-
-class Programmer : public Employee { 
-  public : 
-  int bonus ; 
-  void setSalary ( int s) { 
-    salary = s ; 
-
-  }
-int getSalary() { 
-  return salary ; 
-}
-
-} ; 
-
-int main() { 
-  Programmer myObj ; 
-  myObj.setSalary(50000) ; 
-  myObj.bonus = 15000 ;
+// Polymorphism ;
+class Animal {
+  public:
+    void animalSound() {
+      cout << "The animal makes a sound \n";
+    }
+};
 
 
-  cout << " salary " << myObj.getSalary() << "\n" ; 
+class Pig : public Animal {
+  public:
+    void animalSound() {
+      cout << "The pig says: wee wee \n";
+    }
+};
 
-cout << " bonus " << myObj.bonus << "\n" ; 
-  
+//s
+class Dog : public Animal {
+  public:
+    void animalSound() {
+      cout << "The dog says: bow wow \n";
+    }
+};
 
+int main() {
+  Animal myAnimal;
+  Pig myPig;
+  Dog myDog;
 
-
-
-
-
-
-
+  myAnimal.animalSound();
+  myPig.animalSound();
+  myDog.animalSound();
 
 
 
