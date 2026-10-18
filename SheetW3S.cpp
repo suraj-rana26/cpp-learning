@@ -1,13 +1,12 @@
 #include <iostream>
-using namespace std;
-// use of template 
-template <typename T>
-T add(T a, T b) {
-  return a + b;
-}
+#include <ctime>
+using namespace std ; 
 
-int main() {
-  cout << add<int>(5, 3) << "\n";
-  cout << add<double>(2.5, 1.5) << "\n";
-  return 0;
+int main(){ 
+// timestamp for cuurent date and time 
+  time_t timestamp ; 
+  time(&timestamp) ;
+
+  cout << ctime(&timestamp) ;
+  return 0 ; 
 }
