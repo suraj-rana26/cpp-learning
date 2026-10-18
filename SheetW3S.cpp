@@ -1,16 +1,17 @@
 #include <iostream> 
-#include <set>
+#include <map>
 using namespace std ; 
-// _____ Sets_____
+// _____ Map_____
 
 int main() {
+map<string , int> people = {{"john" , 54} , {"ben" , 32} ,{"tony" ,24}}; 
 
+cout << " john is : " << people["john"] << endl ; 
 
-set<int , greater<int>> numbers = { 1, 5 ,3 ,6,9,4,2} ;
+cout << " ben is :" << people["ben"] << endl; 
 
-for(int num : numbers){
-  cout<<num << endl ;
+return 0 ; 
+
 
 }
 
-}
