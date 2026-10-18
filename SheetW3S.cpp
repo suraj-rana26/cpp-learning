@@ -1,23 +1,15 @@
-#include <iostream>
-#include <vector>
+#include <iostream> 
+#include <vector> 
+using namespace std ;
 
-using namespace std ; 
-// ________Data Structure __________
-// _____VECTOR________
 int main() { 
 
-  vector<string> cars = {"volvo" ," bmw" , "audi" , "hyundai", "bkia" ,  "merceded"};
+  vector<char> alpha = { 'a' , 'b' ,'c' , 'd' ,'e' , 'f' , 'k'} ; 
 
-  cout << cars[0] << endl ; 
+  for(int i = 0 ; i<alpha.size() ; i++){
+    cout<< alpha[i] <<"\n" ; 
+    
+  }
+  return 0 ; 
 
-  cout << cars[3] << endl ; 
-  cout << cars[4] << endl ;
- 
-
-
-
-
-
-
-return 0 ; 
-} 
+}
