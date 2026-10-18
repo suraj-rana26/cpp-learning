@@ -1,27 +1,44 @@
-#include <iostream> 
-using namespace std  ;
-// inheritance 
+#include <iostream>
+using namespace std ;
+
+// base class 
+class Employee { 
+  protected :
+  int salary ;
+
+} ;
+
+class Programmer : public Employee { 
+  public : 
+  int bonus ; 
+  void setSalary ( int s) { 
+    salary = s ; 
+
+  }
+int getSalary() { 
+  return salary ; 
+}
+
+} ; 
+
+int main() { 
+  Programmer myObj ; 
+  myObj.setSalary(50000) ; 
+  myObj.bonus = 15000 ;
+
+
+  cout << " salary " << myObj.getSalary() << "\n" ; 
+
+cout << " bonus " << myObj.bonus << "\n" ; 
+  
 
 
 
-class Vehicle {
-  public: 
-    string brand = "Ford";
-    void honk() {
-      cout << "Tuut, tuut! \n" ;
-    }
-};
 
-// Derived class
-class Car: public Vehicle {
-  public: 
-    string model = "Mustang";
-};
 
-int main() {
-  Car myCar;
-  myCar.honk();
-  cout << myCar.brand + " " + myCar.model;
+
+
+
 
 
 
