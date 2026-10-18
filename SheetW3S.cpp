@@ -1,15 +1,11 @@
-#include <iostream> 
-#include <vector> 
-using namespace std ;
+#include <iostream>
+#include <vector>
+using namespace std;
 
-int main() { 
-
-  vector<char> alpha = { 'a' , 'b' ,'c' , 'd' ,'e' , 'f' , 'k'} ; 
-
-  for(int i = 0 ; i<alpha.size() ; i++){
-    cout<< alpha[i] <<"\n" ; 
-    
-  }
-  return 0 ; 
-
+int main() {
+  vector<char> alpha = {'a' , 'b' ,'c' ,'d' , 'e','f'} ;
+  for (char alp : alpha) {
+    cout << alp << "\n";
+  }  
+  return 0;
 }
